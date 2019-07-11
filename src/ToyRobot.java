@@ -15,9 +15,6 @@ public class ToyRobot {
         return true;
     }
 
-    public boolean move() {
-        return move(position.getNextPosition());
-    }
 
     public boolean move(Position newPosition) {
 

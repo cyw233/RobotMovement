@@ -13,16 +13,19 @@ public class Game {
     /**
      * Evals and executes a string command.
      */
-    public String eval(String inputString) throws Exception {
+    public String eval(String inputString) {
 
         List<String> commands = Arrays.asList(inputString.split(",[ ]*"));
+        if (!isValidInput(commands)) {
+            return "Invalid command";
+        }
 
         for (int i = 0; i < commands.size(); i++) {
             String command = commands.get(i);
 
             char moveCmd = command.charAt(0);
-            int moveTimes = command.charAt(1) - '0';
-            for (int j = 0; j < moveTimes; j++) {
+            int movTimes = command.charAt(1) - '0';
+            for (int j = 0; j < movTimes; j++) {
                 switch (moveCmd) {
                     case 'F':
                         Position fPosition = robot.getPosition().getForwardPosition();
@@ -38,13 +41,9 @@ public class Game {
                     case 'R':
                         robot.rotateRight();
                         break;
-                    default:
-                        throw new Exception("Invalid command!");
 
                 }
             }
-
-
         }
 
         String output = getDistance();
@@ -55,7 +54,28 @@ public class Game {
      * Returns the X,Y and Direction of the robot
      */
     public String getDistance() {
+
         return Math.abs(robot.getPosition().getX()) +
                 Math.abs(robot.getPosition().getY()) + "";
     }
+
+    public boolean isValidInput(List<String> commands) {
+
+        for (int i = 0; i < commands.size(); i++) {
+            String command = commands.get(i);
+
+            if (command.isEmpty() || command == null) {
+                return false;
+            }
+
+            if (!Character.isLetter(command.charAt(0)) ||
+                    !Character.isDigit(command.charAt(1))) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
 }

@@ -21,6 +21,8 @@ public class Main {
 
             String outputVal = game.eval(inputString);
             System.out.println(outputVal);
+
+
         }
 
     }
