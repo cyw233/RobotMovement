@@ -14,7 +14,7 @@ public enum Direction {
 
     private int directionIndex;
 
-    private Direction(int direction) {
+    Direction(int direction) {
         this.directionIndex = direction;
     }
 

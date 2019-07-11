@@ -11,7 +11,7 @@ public class Game {
 
 
     /**
-     * Evals and executes a string command.
+     * Evals and executes commands.
      */
     public String eval(String inputString) {
 
@@ -20,12 +20,13 @@ public class Game {
             return "Invalid command";
         }
 
+        Position startPos = robot.getPosition();
         for (int i = 0; i < commands.size(); i++) {
             String command = commands.get(i);
 
             char moveCmd = command.charAt(0);
-            int movTimes = command.charAt(1) - '0';
-            for (int j = 0; j < movTimes; j++) {
+            int moveTimes = Integer.parseInt(command.substring(1).trim());
+            for (int j = 0; j < moveTimes; j++) {
                 switch (moveCmd) {
                     case 'F':
                         Position fPosition = robot.getPosition().getForwardPosition();
@@ -46,29 +47,38 @@ public class Game {
             }
         }
 
-        String output = getDistance();
+        Position endPos = robot.getPosition();
+        String output = getDistance(startPos, endPos);
+
+        // Reset the start position for next move
+        robot.setPosition(robot.getPosition());
         return output;
     }
 
     /**
-     * Returns the X,Y and Direction of the robot
+     * Returns the robot's distance from its starting point
      */
-    public String getDistance() {
+    public String getDistance(Position startPos, Position endPos) {
 
-        return Math.abs(robot.getPosition().getX()) +
-                Math.abs(robot.getPosition().getY()) + "";
+        return Math.abs(startPos.getX() - endPos.getX()) +
+                Math.abs(startPos.getY() - endPos.getY()) + "";
     }
 
+    /**
+     * Check the validation of input commands
+     */
     public boolean isValidInput(List<String> commands) {
 
         for (int i = 0; i < commands.size(); i++) {
             String command = commands.get(i);
 
-            if (command.isEmpty() || command == null) {
+            if (command == null || command.isEmpty()) {
                 return false;
             }
 
-            if (!Character.isLetter(command.charAt(0)) ||
+            if (command.length() != 2) return false;
+
+            if (!Character.isUpperCase(command.charAt(0)) ||
                     !Character.isDigit(command.charAt(1))) {
                 return false;
             }

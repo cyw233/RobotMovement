@@ -27,10 +27,6 @@ public class Position {
         return this.direction;
     }
 
-    public void setDirection(Direction direction) {
-        this.direction = direction;
-    }
-
     public void change(int x, int y) {
         this.x = this.x + x;
         this.y = this.y + y;

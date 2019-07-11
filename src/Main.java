@@ -8,8 +8,8 @@ public class Main {
         Console console = System.console();
 
         ToyRobot robot = new ToyRobot();
-        Position position = new Position(0, 0, Direction.EAST);
-        robot.setPosition(position);
+        Position startPos = new Position(0, 0, Direction.EAST);
+        robot.setPosition(startPos);
         Game game = new Game(robot);
 
         System.out.println("Welcome! Please enter a string of comma-separated commands");
