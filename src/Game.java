@@ -17,7 +17,7 @@ public class Game {
 
         List<String> commands = Arrays.asList(inputString.split(",[ ]*"));
         if (!isValidInput(commands)) {
-            return "Invalid command";
+            return "Robot didn't move due to the invalid command.";
         }
 
         Position startPos = robot.getPosition();
@@ -25,7 +25,7 @@ public class Game {
             String command = commands.get(i);
 
             char moveCmd = command.charAt(0);
-            int moveTimes = Integer.parseInt(command.substring(1).trim());
+            int moveTimes = Integer.parseInt(command.substring(1));
             for (int j = 0; j < moveTimes; j++) {
                 switch (moveCmd) {
                     case 'F':
@@ -68,23 +68,40 @@ public class Game {
      * Check the validation of input commands
      */
     public boolean isValidInput(List<String> commands) {
+        boolean isCompleteCommand = true;
+        boolean isValidMove = true;
+        boolean isValidNumber = true;
 
         for (int i = 0; i < commands.size(); i++) {
             String command = commands.get(i);
 
-            if (command == null || command.isEmpty()) {
-                return false;
+            if (command == null || command.isEmpty() || command.length() < 2) {
+                System.out.println("Error: Found incomplete command!");
+                isCompleteCommand = false;
+                continue;
             }
 
-            if (command.length() != 2) return false;
-
-            if (!Character.isUpperCase(command.charAt(0)) ||
-                    !Character.isDigit(command.charAt(1))) {
-                return false;
+            if (!"FBRL".contains(Character.toString(command.charAt(0)))) {
+                System.out.println("Error: Move command must be F, B, R or L");
+                isValidMove = false;
             }
+
+            try {
+                int moveTimes = Integer.parseInt(command.substring(1));
+                if (moveTimes < 0) {
+                    System.out.println("Error: Number command could not be negative!");
+                    isValidNumber = false;
+                }
+            } catch (Exception e) {
+                System.out.println("Error: Number command should be integer!");
+                isValidNumber = false;
+            }
+
+
+
         }
 
-        return true;
+        return isCompleteCommand && isValidMove && isValidNumber;
     }
 
 
