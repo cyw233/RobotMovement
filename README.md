@@ -13,7 +13,7 @@ This is a command line Java application that can parse commands and display the 
 
 ## Example Input and Output:
 
-1)
+1.
 
 ```
 Input: F1,R1,B2,L1,B3
@@ -21,7 +21,7 @@ Input: F1,R1,B2,L1,B3
 Output: 4
 ```
 
-2)
+2.
 
 ```
 Input: F5, R2, B3, L3, B2
@@ -29,7 +29,7 @@ Input: F5, R2, B3, L3, B2
 Output: 10
 ```
 
-3)
+3.
 
 ```
 Input: f2, R2
