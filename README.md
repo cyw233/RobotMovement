@@ -40,6 +40,10 @@ Output: Error: Move command must be F, B, R or L
 
 ## Compile and Run
 
+**Method 1:** 
+
+Directly compile and run the java files.
+
 ```bash
 # cd to the src folder
 cd RobotMovement/src
@@ -49,5 +53,16 @@ javac *.java
 
 # Run
 java Main
+```
+
+
+
+**Method 2:** 
+
+Additionally, you can run the jar file that sits inside the RobotMovement folder
+
+```bash
+cd RobotMovement
+java -jar RobotMovement.jar
 ```
 
