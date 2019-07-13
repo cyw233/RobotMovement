@@ -35,7 +35,7 @@ Output: 10
 Input: f2, R2
 
 Output: Error: Move command must be F, B, R or L
-				Robot didn't move due to the invalid command.
+        Robot didn't move due to the invalid command.
 ```
 
 ## Compile and Run
