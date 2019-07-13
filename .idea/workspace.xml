@@ -7,20 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e1904-da10-4a30-8145-1fce45943311" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RobotMovement_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RobotMovement/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RobotMovement/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RobotMovement/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RobotMovement/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RobotMovement/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RobotMovement/Position$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RobotMovement/Position$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RobotMovement/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RobotMovement/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RobotMovement/ToyRobot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RobotMovement/ToyRobot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Direction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Position$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToyRobot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Position.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="520">
@@ -78,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="300">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -106,8 +93,8 @@
         <option value="$PROJECT_DIR$/src/ToyRobot.java" />
         <option value="$PROJECT_DIR$/src/Position.java" />
         <option value="$PROJECT_DIR$/src/Direction.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -122,6 +109,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,27 +126,12 @@
             <path>
               <item name="RobotMovement" type="b2602c69:ProjectViewProjectNode" />
               <item name="RobotMovement" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RobotMovement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RobotMovement" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="RobotMovement_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RobotMovement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RobotMovement" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,8 +183,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="125" y="23" width="1442" height="939" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18714286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18928571" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -291,13 +266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -310,6 +278,13 @@
             <element signature="e#522#523#0" expanded="true" />
             <element signature="e#559#560#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
         </state>
       </provider>
     </entry>

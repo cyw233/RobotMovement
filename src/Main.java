@@ -13,7 +13,7 @@ public class Main {
         Game game = new Game(robot);
 
         System.out.println("Welcome! Please enter a string of comma-separated commands");
-        System.out.println("For example: F1, R1, B2, L1, B3");
+        System.out.println("For example: F1,R1,B2,L1,B3");
 
 
         while (true) {
